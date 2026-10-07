@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Booking | MOTOCARE</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">M</span><span>MOTO<strong>CARE</strong></span></a><nav><a href="index.html">Beranda</a><a href="index.html#layanan">Layanan</a><a href="login.html" class="nav-btn">Login Staff</a></nav></header>
+<main class="form-page">
+<div class="form-shell"><div class="form-intro"><span class="eyebrow">SERVICE BOOKING</span><h1>Atur jadwal service motor.</h1><p>Isi data kendaraan dan kebutuhan service. Data langsung masuk ke dashboard staff pada browser ini.</p><div class="mini-info"><b>✓ Konfirmasi booking</b><b>✓ Kode booking otomatis</b><b>✓ Status dapat dipantau staff</b></div></div>
+<div class="form-card"><h2>Data Booking</h2><form id="bookingForm">
+<label>Nama Pelanggan<input id="nama" required placeholder="Contoh: Ackley Sarumpaet"></label>
+<label>No. WhatsApp<input id="telepon" required placeholder="08xxxxxxxxxx"></label>
+<div class="two"><label>Merk Motor<select id="merk" required><option value="">Pilih</option><option>Honda</option><option>Yamaha</option><option>Suzuki</option><option>Kawasaki</option><option>Vespa</option><option>Lainnya</option></select></label><label>Tipe Motor<input id="tipe" required placeholder="Vario 160"></label></div>
+<div class="two"><label>Tanggal<input type="date" id="tanggal" required></label><label>Jam<input type="time" id="jam" required></label></div>
+<label>Jenis Service<select id="service" required><option value="">Pilih layanan</option><option>Ganti Oli</option><option>Service Ringan</option><option>Tune Up</option><option>Ban & Rem</option><option>Cek Mesin</option></select></label>
+<label>Keluhan<textarea id="keluhan" rows="4" placeholder="Jelaskan keluhan motor..."></textarea></label>
+<button class="btn primary full" type="submit">Konfirmasi Booking →</button></form><div id="bookingResult"></div></div></div>
+</main><script src="js/script.js"></script></body></html>

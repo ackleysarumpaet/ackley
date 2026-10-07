@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard | MOTOCARE</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="app-bg">
+<aside class="sidebar"><a class="brand" href="index.html"><span class="brand-mark">M</span><span>MOTO<strong>CARE</strong></span></a><div class="side-user"><span class="avatar" id="userAvatar">B</span><div><b id="userName">Boss</b><small id="userRole">OWNER</small></div></div>
+<nav class="side-nav"><button class="side-link active" data-view="overview">▦ <span>Overview</span></button><button class="side-link" data-view="booking">◷ <span>Booking</span></button><button class="side-link" data-view="work">🔧 <span>Pekerjaan</span></button><button class="side-link" data-view="inventory" id="inventoryLink">▣ <span>Sparepart</span></button><button class="side-link" data-view="customers" id="customerLink">♙ <span>Pelanggan</span></button></nav><button id="logout" class="logout">↪ Keluar</button></aside>
+<main class="app-main"><div class="mobile-top"><span class="brand">MOTO<strong>CARE</strong></span><button id="logoutMobile">Keluar</button></div>
+<section id="overview" class="view active"><div class="dash-head"><div><span class="eyebrow" id="dashEyebrow">OWNER DASHBOARD</span><h1>Selamat datang, <span id="dashName">Boss</span>.</h1><p>Ringkasan operasional bengkel hari ini.</p></div><a class="btn primary" href="booking.html">+ Booking Baru</a></div>
+<div class="metric-grid"><div class="metric"><span>Booking Hari Ini</span><strong id="mBooking">0</strong><small>reservasi masuk</small></div><div class="metric"><span>Sedang Dikerjakan</span><strong id="mProcess">0</strong><small>kendaraan</small></div><div class="metric"><span>Selesai</span><strong id="mDone">0</strong><small>service</small></div><div class="metric boss-only"><span>Estimasi Omzet</span><strong id="mRevenue">Rp0</strong><small>dari booking</small></div></div>
+<div class="panel"><div class="panel-head"><div><h2>Booking terbaru</h2><p>Data masuk dari form booking.</p></div><button class="text-btn" data-view-go="booking">Lihat semua →</button></div><div id="recentBookings"></div></div></section>
+
+<section id="booking" class="view"><div class="dash-head"><div><span class="eyebrow">WORKSHOP QUEUE</span><h1>Daftar Booking</h1><p>Atur antrean dan status service.</p></div></div><div class="panel"><div id="allBookings"></div></div></section>
+
+<section id="work" class="view"><div class="dash-head"><div><span class="eyebrow">MECHANIC WORK</span><h1>Pekerjaan Mekanik</h1><p>Kelola kendaraan yang sedang dikerjakan.</p></div></div><div class="work-grid" id="workGrid"></div></section>
+
+<section id="inventory" class="view boss-view"><div class="dash-head"><div><span class="eyebrow">INVENTORY</span><h1>Sparepart & Stok</h1><p>Monitoring stok komponen bengkel.</p></div><button class="btn primary" id="addPart">+ Tambah Sparepart</button></div><div class="inventory-grid" id="inventoryGrid"></div></section>
+
+<section id="customers" class="view boss-view"><div class="dash-head"><div><span class="eyebrow">CUSTOMER DATABASE</span><h1>Pelanggan</h1><p>Data pelanggan yang pernah melakukan booking.</p></div></div><div class="panel"><div id="customerTable"></div></div></section>
+</main><script src="js/script.js"></script></body></html>
